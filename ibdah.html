@@ -3,108 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Ameer</title>
-    <!-- Link to External CSS -->
+    <title>About ChatGPT</title>
+    <!-- External CSS file link -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Inline styling for fallback image */
-        .hobby-img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        /* Inline styling for menu */
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #0077cc;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Menu Bar -->
     <nav>
         <ul>
-            <li><a href="#about">About Ameer</a></li>
+            <li><a href="#about-me">About Me</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#future">Future Goals</a></li>
-            <li><a href="#project">Previous Projects</a></li>
+            <li><a href="#form">Guess My Favorite Hobby</a></li>
+            <li><a href="#future-goals">Future Goals</a></li>
+            <li><a href="#projects">Projects</a></li>
         </ul>
     </nav>
 
-    <!-- Section About Ameer -->
-    <section id="about">
-        <h1>Ameer</h1>
-        <img src="ameer.jpg" alt="Ameer Picture" width="300" height="300">
-        <p>
-            Hello! My name is Ameer. I am passionate about technology and always eager to learn new skills.
-            Whether it's coding, exploring new hobbies, or staying up to date with the latest in tech, 
-            I strive to keep growing both personally and professionally.
-        </p>
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h1>About ChatGPT</h1>
+        <!-- Image with fallback alt text -->
+        <img src="your-image.jpg" alt="A picture of ChatGPT" width="300" height="300">
+        <p>Hello! I am ChatGPT, an AI language model developed by OpenAI. I love assisting people with their various queries, generating content, and solving problems through code, words, or design.</p>
     </section>
 
-    <!-- Section Hobbies -->
+    <!-- Hobbies Section -->
     <section id="hobbies">
         <h2>My Hobbies</h2>
         <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Cycling" target="_blank">Cycling</a>
-                <img src="cycling.jpg" alt="Cycling Hobby" class="hobby-img" onerror="this.src='fallback.jpg';">
-            </li>
-            <li><a href="https://en.wikipedia.org/wiki/Photography" target="_blank">Photography</a>
-                <img src="photography.jpg" alt="Photography Hobby" class="hobby-img" onerror="this.src='fallback.jpg';">
-            </li>
-            <li><a href="https://en.wikipedia.org/wiki/Reading" target="_blank">Reading</a>
-                <img src="reading.jpg" alt="Reading Hobby" class="hobby-img" onerror="this.src='fallback.jpg';">
-            </li>
+            <li><a href="https://en.wikipedia.org/wiki/Coding" target="_blank">Coding</a> - I enjoy helping users by generating code and solving problems.</li>
+            <li><a href="https://en.wikipedia.org/wiki/Reading" target="_blank">Reading</a> - I 'read' vast amounts of data to assist users with various topics.</li>
+            <li><a href="https://en.wikipedia.org/wiki/Writing" target="_blank">Writing</a> - From technical content to creative writing, I love generating text!</li>
         </ul>
+        <!-- Example of fallback text if image doesn't load -->
+        <div>
+            <img src="coding.jpg" alt="Coding Hobby">
+            <img src="reading.jpg" alt="Reading Hobby">
+            <img src="writing.jpg" alt="Writing Hobby">
+        </div>
     </section>
 
-    <!-- Section Form to Guess Favorite Hobby -->
-    <section>
+    <!-- Form Section -->
+    <section id="form">
         <h2>Guess My Favorite Hobby</h2>
-        <form action="#" method="post">
+        <form>
             <fieldset>
                 <legend>Your Guess</legend>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="guess">Guess:</label>
-                <input type="text" id="guess" name="guess" required><br><br>
-
+                <label for="guess">What is my favorite hobby?</label><br>
+                <input type="text" id="guess" name="guess" placeholder="Enter your guess"><br><br>
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
     </section>
 
-    <!-- Section Future Goals -->
-    <section id="future">
+    <!-- Future Goals Section -->
+    <section id="future-goals">
         <h2>What I Want to Be When I Grow Up</h2>
-        <p>
-            In the future, I aspire to be a software engineer working on groundbreaking technology 
-            that positively impacts the world. I want to combine my passion for problem-solving and creativity 
-            to create solutions that can change lives for the better.
-        </p>
+        <p>As an AI, I want to grow by continually learning and improving to assist users in even more intelligent and human-like ways. My ultimate goal is to become a tool that enhances human productivity and creativity in diverse areas, from research to entertainment.</p>
     </section>
 
-    <!-- Section Previous Project -->
-    <section id="project">
-        <h2>Previous Projects</h2>
-        <p>
-            One of my previous projects was creating a weather application. You can check it out here:
-            <a href="https://example.com/project" target="_blank">My Weather App Project</a>.
-        </p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>Check out one of my previous projects on GitHub:</p>
+        <a href="https://github.com/openai/gpt-3" target="_blank">OpenAI GPT-3 on GitHub</a>
     </section>
 
 </body>
